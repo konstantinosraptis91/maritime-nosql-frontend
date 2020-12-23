@@ -12,7 +12,7 @@ const toolbar = props => (
     <header className={classes.Toolbar}>
         <DrawerToggle clicked={props.drawerToggleClicked}/>
         <div className={classes.Logo}>
-            <Logo/>
+            <Logo logoType="appLogo"/>
         </div>
         <div className={classes.AppTitle}>mλritimξ</div>
         <nav className={classes.DesktopOnly}>

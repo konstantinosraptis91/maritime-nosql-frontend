@@ -2,31 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FETCH_HEAD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/papeiLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/statics/privacyPolicy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/PapeiLogo/PapeiLogo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/PrivacyPolicy/PrivacyPolicy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/statics/homeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/homeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Cockpit/Cockpit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Cockpit/Cockpit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/PapeiLogo/PapeiLogo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +77,7 @@
       <workItem from="1608510574335" duration="1559000" />
       <workItem from="1608512146022" duration="152000" />
       <workItem from="1608555783206" duration="40000" />
-      <workItem from="1608715837019" duration="14818000" />
+      <workItem from="1608715837019" duration="17902000" />
     </task>
     <servers />
   </component>

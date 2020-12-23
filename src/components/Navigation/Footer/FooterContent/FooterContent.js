@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './FooterContent.module.css';
-import PapeiLogo from '../../../Logo/PapeiLogo/PapeiLogo';
 import Button from '../../../UI/Button/Button';
+import Logo from "../../../Logo/Logo";
 
 const footerContent = props => {
     return (
         <div className={classes.FooterContent}>
-            <PapeiLogo/>
+            <Logo logoType="papeiLogo"/>
             <div>
                 Ακολουθήστε μας:
                 <a
