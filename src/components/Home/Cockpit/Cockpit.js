@@ -6,7 +6,7 @@ import headerImg from '../../../assets/images/header.jpg';
  */
 const headerStyle = {
     background: `url(${headerImg}) repeat local right top / cover`,
-    padding: '15rem 2rem 5rem 2rem',
+    padding: '22rem 2rem 5rem 2rem',
     textAlign: 'center',
     lineHeight: '1.5',
     fontSize: '2rem',

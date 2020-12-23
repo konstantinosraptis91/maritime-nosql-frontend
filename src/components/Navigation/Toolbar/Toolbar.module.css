@@ -10,7 +10,8 @@
     left: 0;
     background-color: #187aba;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
@@ -26,15 +27,35 @@
 }
 
 .Toolbar .AppTitle {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
     color: white;
     text-transform: uppercase;
     position: fixed;
-    right: 45%;
+    right: 44%;
+    /*flex: 499px;*/
 }
 
+
 @media (max-width: 499px) {
-    .DesktopOnly {
+    .DesktopOnly, .Logo {
+        display: none;
+    }
+
+    .AppTitle {
+        left: 30%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .Toolbar {
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+    .AppTitle {
         display: none;
     }
 }

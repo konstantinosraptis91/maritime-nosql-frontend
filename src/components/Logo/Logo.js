@@ -9,7 +9,7 @@ import classes from './Logo.module.css';
 const logo = props => (
     <div className={classes.Logo}>
         <a href="/">
-            <img src={vesselLogo} alt="A logo of a delicious burger"/>
+            <img src={vesselLogo} alt="Vessel logo"/>
         </a>
     </div>
 );

@@ -3,8 +3,36 @@
  */
 
 .HomeBlock {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    background-color: #40A4C8;
+    color: whitesmoke;
 
 }
-.HomeBlock img {
-    max-width: 100%;
+.HomeBlock img, .HomeBlock div {
+    width: 50%;
+    flex: 250px;
+}
+
+.Block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Header {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+}
+
+.Context {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+    padding: .8rem 4rem;
+
 }

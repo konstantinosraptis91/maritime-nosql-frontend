@@ -3,8 +3,10 @@ import Auxiliary from '../Auxiliary/Auxiliary';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Navigation/Footer/Footer';
+import Modal from '../../components/UI/Modal/Modal';
 
 import classes from './Layout.module.css';
+import PrivacyPolicy from "../../components/Navigation/Footer/PrivacyPolicy/PrivacyPolicy";
 
 /**
  * @author Stavros Lamprinos [stalab at linuxmail.org] on 22/12/2020.
@@ -13,7 +15,8 @@ import classes from './Layout.module.css';
 class Layout extends Component {
 
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        showPrivacy: false
     }
 
     sideDrawerClosedHandler = () => {
@@ -27,11 +30,23 @@ class Layout extends Component {
         });
     }
 
+    privacyHandler = () => {
+        this.setState({showPrivacy: true});
+    }
+
+    privacyCancelHandler = () => {
+        this.setState({showPrivacy: false});
+    }
+
 
     render() {
 
         return (
             <Auxiliary>
+                <Modal show={this.state.showPrivacy}
+                       closeModal={this.privacyCancelHandler}>
+                    <PrivacyPolicy />
+                </Modal>
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
                 <SideDrawer
                     open={this.state.showSideDrawer}
@@ -39,7 +54,7 @@ class Layout extends Component {
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
-                <Footer/>
+                <Footer showPrivacy={this.privacyHandler}/>
             </Auxiliary>
         );
     }
