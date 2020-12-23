@@ -5,3 +5,6 @@
 .HomeBlock {
 
 }
+.HomeBlock img {
+    max-width: 100%;
+}
