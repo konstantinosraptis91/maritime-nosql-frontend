@@ -10,6 +10,7 @@ import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 const homeBlocks = blockContext.map((block, index) => {
     return (
         <HomeBlock key={index}
+                   path={block.path}
                    bockTitle={block.title}
                    bockContext={block.description}
                    reverse={index % 2 !== 0}

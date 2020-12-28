@@ -9,20 +9,19 @@ import NavigationItem from './NavigationItem/NavigationItem';
 const navigationItems = () => (
     <ul className={classes.NavigationItems}>
         <NavigationItem
-            link="/"
-            active>
+            link="/" exact>
             Αρχική
         </NavigationItem>
         <NavigationItem
-            link="/">
+            link="/vessels">
             Πλοία
         </NavigationItem>
         <NavigationItem
-            link="/">
+            link="/ports">
             Λιμάνια
         </NavigationItem>
         <NavigationItem
-            link="/">
+            link="/info">
             Πληροφορίες
         </NavigationItem>
     </ul>

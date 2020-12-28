@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/axios-maritime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/statics/homeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/homeContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/UI" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\components\UI" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\hoc" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\assets\images" />
@@ -76,7 +87,7 @@
       <workItem from="1608512146022" duration="152000" />
       <workItem from="1608555783206" duration="40000" />
       <workItem from="1608715837019" duration="18904000" />
-      <workItem from="1609136184701" duration="552000" />
+      <workItem from="1609136184701" duration="3699000" />
     </task>
     <servers />
   </component>

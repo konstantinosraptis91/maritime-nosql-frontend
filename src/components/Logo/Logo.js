@@ -23,6 +23,9 @@ const logo = props => {
             preferences.target = '_black';
             preferences.rel = 'noreferrer';
             preferences.alt = 'Logo of University of Piraeus';
+            break;
+        default:
+            break;
     }
 
     return (

@@ -36,3 +36,8 @@
     padding: .8rem 4rem;
 
 }
+
+.Block a {
+    text-decoration: none;
+    color: white;
+}

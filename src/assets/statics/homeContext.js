@@ -3,6 +3,7 @@ import portImg from '../images/port.jpg';
 
 const blockContext = [
     {
+        path: 'vessels',
         imgPath: vesselImg,
         imgDescription: 'a vessel sailing at open seas',
         title: 'Λίστα Πλοίων',
@@ -12,6 +13,7 @@ const blockContext = [
             'όπως παρουσιάζονται στον χάρτη'
     },
     {
+        path: 'ports',
         imgPath: portImg,
         imgDescription: 'huge port',
         title: 'Λιμάνια',
