@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/axios-maritime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/PapeiLogo/PapeiLogo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,6 +56,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\hoc" />
+      <recent name="X:\WebstormProjects\maritime-nosql-front-end\src" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\assets\images" />
     </key>
   </component>
@@ -77,7 +75,8 @@
       <workItem from="1608510574335" duration="1559000" />
       <workItem from="1608512146022" duration="152000" />
       <workItem from="1608555783206" duration="40000" />
-      <workItem from="1608715837019" duration="17902000" />
+      <workItem from="1608715837019" duration="18904000" />
+      <workItem from="1609136184701" duration="552000" />
     </task>
     <servers />
   </component>
