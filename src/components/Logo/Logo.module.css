@@ -1,0 +1,17 @@
+.Logo {
+    padding: 8px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.Logo img {
+    height: 100%;
+}
+
+@media (max-width: 499px) {
+    .Logo {
+        background-color: #187aba;
+        text-align: center;
+    }
+
+}

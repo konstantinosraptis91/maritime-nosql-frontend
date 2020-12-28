@@ -1,0 +1,61 @@
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 22/12/2020.
+ */
+
+.Toolbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #187aba;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.Logo {
+    height: 80%;
+}
+
+.Toolbar .AppTitle {
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    position: fixed;
+    right: 44%;
+    /*flex: 499px;*/
+}
+
+
+@media (max-width: 499px) {
+    .DesktopOnly, .Logo {
+        display: none;
+    }
+
+    .AppTitle {
+        left: 30%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .Toolbar {
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+    .AppTitle {
+        display: none;
+    }
+}
