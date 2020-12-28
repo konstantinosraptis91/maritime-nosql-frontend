@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/statics/homeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/homeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios-maritime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-maritime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       <workItem from="1608512146022" duration="152000" />
       <workItem from="1608555783206" duration="40000" />
       <workItem from="1608715837019" duration="18904000" />
-      <workItem from="1609136184701" duration="3699000" />
+      <workItem from="1609136184701" duration="10670000" />
     </task>
     <servers />
   </component>

@@ -14,10 +14,10 @@
     font-weight: bold;
 }
 
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-}
+/*.Button:first-of-type {*/
+/*    margin-left: 0;*/
+/*    padding-left: 0;*/
+/*}*/
 
 .Success {
     color: #5C9210;
@@ -27,6 +27,11 @@
 .Danger {
     color: #944317;
     border-color: #944317;
+}
+
+.Info {
+    color: #187aba;
+    border-color: #187aba;
 }
 
 .Link {
