@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maritime-nosql-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maritime-nosql-frontend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/axios-maritime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-maritime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lwOGm5egwJ7vBPAtYnMd9A9Z57" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -57,6 +53,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -83,6 +80,8 @@
       <workItem from="1608555783206" duration="40000" />
       <workItem from="1608715837019" duration="18904000" />
       <workItem from="1609136184701" duration="10670000" />
+      <workItem from="1609231826143" duration="220000" />
+      <workItem from="1609232075161" duration="2893000" />
     </task>
     <servers />
   </component>
@@ -100,7 +99,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="development" />
                       </list>
                     </value>
                   </entry>
