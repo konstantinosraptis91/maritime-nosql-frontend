@@ -5,4 +5,8 @@
     padding: .7rem;
     margin: .7rem auto;
     box-sizing: border-box;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100px;
+    background-color: whitesmoke;
 }

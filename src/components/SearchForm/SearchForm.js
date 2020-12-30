@@ -8,7 +8,7 @@ class SearchForm extends Component {
 
     state = {
         //  dummy data
-        vesselTypes: ['Passenger', 'Other'],
+        vesselTypes: ['Passenger', 'Other', 'Fishing'],
         countries: ['France', 'United Kingdom of Great Britain and Northern Ireland'],
         loading: false,
 
