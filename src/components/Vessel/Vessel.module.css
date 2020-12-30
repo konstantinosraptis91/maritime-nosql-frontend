@@ -17,6 +17,12 @@
     justify-content: space-around;
 }
 
+.Stats p {
+    width: 250px;
+    text-align: center;
+}
+
 .Vessel button {
+    display: block;
     margin: 5px auto;
 }

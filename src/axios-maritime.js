@@ -7,8 +7,8 @@ import axios from 'axios';
 const instance = axios.create({
     baseURL: 'http://localhost:9000/',
     headers: {
-        limit: 30
+        'limit': 30,
     }
 });
-// axios.defaults.headers.common['header1'] = 'value'
+
 export default instance;

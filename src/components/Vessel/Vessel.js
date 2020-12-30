@@ -11,18 +11,25 @@ const vessel = props => {
 
     return (
         <div className={classes.Vessel}>
-            <h4 style={{textAlign: 'center'}}>_Vessel Name_</h4>
+            <span style={{
+                backgroundColor: '#222',
+                opacity: '.7'
+            }}>
+                <h4 style={{textAlign: 'center'}}>{props.name}</h4>
+            </span>
             <hr style={{width: '85%'}}/>
             <div className={classes.Stats}>
-                <p>Τύπος: _vessel_type_</p>
-                <p><abbr title="Maritime Mobile Service Identity">MMSI</abbr>: _mmsi_</p>
-                <p>Διακριτικό Πλοίου: _call_sign_</p>
-                <p>Σημαία: _vessel_country</p>
-                <Button btnType="Info"
-                        clicked={props.continueVesselInfo}>
-                    Αναλυτικά Στοιχεία
-                </Button>
+                <p>Τύπος: {props.shipType}</p>
+                <p><abbr title="Maritime Mobile Service Identity">MMSI</abbr>: {props.mmsi}</p>
+                {/*<p>Διακριτικό Πλοίου: _call_sign_</p>*/}
+                <p>Σημαία: {props.country}</p>
+
             </div>
+            <hr style={{width: '85%'}}/>
+            <Button btnType="Info"
+                    clicked={props.continueVesselInfo}>
+                Αναλυτικά Στοιχεία
+            </Button>
         </div>
     )
 }

@@ -31,7 +31,7 @@
 
 .Info {
     color: #187aba;
-    border-color: #187aba;
+    border: none;
 }
 
 .Link {
