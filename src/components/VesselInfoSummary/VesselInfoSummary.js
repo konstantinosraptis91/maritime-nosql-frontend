@@ -9,7 +9,16 @@ import classes from './VesselInfoSummary.module.css';
 
 const vesselInfoSummary = props => (
     <div className={classes.VesselInfo}>
-        <h3 style={{textAlign: 'center'}}><span>{props.vessel.vesselName}</span></h3>
+        <div>
+            <p style={{
+                position: 'absolute',
+                left: '7%',
+                bottom: '72%',
+                fontSize: '.8rem',
+                color: '#187aba'
+            }}>Πηγή: AIS Nari Static</p>
+            <h3 style={{textAlign: 'center'}}><span>{props.vessel.vesselName}</span></h3>
+        </div>
         <hr style={{width: '90%'}}/>
         <div className={classes.Stats}>
             <p>Τύπος: <span>{props.vessel.shipType}</span></p>
@@ -31,7 +40,7 @@ const vesselInfoSummary = props => (
         <hr style={{width: '90%'}}/>
         <Button btnType="Info"
                 clicked={props.trajectoryContinue}>
-            Εμφάνιση Τοχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
+            Εμφάνιση Τροχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
         </Button>
     </div>
 );

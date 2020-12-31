@@ -41,6 +41,7 @@ class Vessels extends Component {
             const data = page === 0 ?
                 [...response.data] :
                 [...this.state.vessels, ...response.data];
+            console.log(data.length);
             this.setState({
                 vessels: data,
                 loading: false
@@ -63,7 +64,7 @@ class Vessels extends Component {
 
     componentDidMount() {
         this.loadData(this.props.match.path, this.state.page);
-        window.addEventListener('scroll', this.checkScrollTop);
+        // window.addEventListener('scroll', this.checkScrollTop);
 
         let options = {
             root: null,
@@ -109,15 +110,15 @@ class Vessels extends Component {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
-    checkScrollTop = () => {
-        if (!this.state.toTop && window.pageYOffset > 400) {
-            this.setState({toTop: true});
-            console.log('state set: ' + this.state.toTop);
-        } else if (this.state.toTop && window.pageYOffset <= 400) {
-            this.setState({toTop: false});
-            console.log('state set: ' + this.state.toTop);
-        }
-    }
+    // checkScrollTop = () => {
+    //     if (!this.state.toTop && window.pageYOffset > 400) {
+    //         this.setState({toTop: true});
+    //         console.log('state set: ' + this.state.toTop);
+    //     } else if (this.state.toTop && window.pageYOffset <= 400) {
+    //         this.setState({toTop: false});
+    //         console.log('state set: ' + this.state.toTop);
+    //     }
+    // }
 
     render() {
         const loadingCSS = {

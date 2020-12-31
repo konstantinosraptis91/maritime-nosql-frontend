@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/globals/globalFuncs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/PrivacyPolicy/PrivacyPolicy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/PrivacyPolicy/PrivacyPolicy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +80,7 @@
       <workItem from="1609136184701" duration="10670000" />
       <workItem from="1609231826143" duration="220000" />
       <workItem from="1609232075161" duration="14693000" />
-      <workItem from="1609309677158" duration="38239000" />
+      <workItem from="1609309677158" duration="40646000" />
     </task>
     <servers />
   </component>

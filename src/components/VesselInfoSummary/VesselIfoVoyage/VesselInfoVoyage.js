@@ -26,7 +26,7 @@ const vesselInfoVoyage = props => {
                             <span>{props.voyage.firstMeasurement.eta}</span>
                         </li>
                         <li>
-                            Απόσταση από λιμάνι: <span>{props.voyage.firstMeasurement.toPort} miles</span>
+                            Απόσταση από λιμάνι: <span>{props.voyage.firstMeasurement.toPort} m</span>
                         </li>
                         <li>
                             Ημερομηνία: <span>{props.voyage.firstMeasurement.date}</span>
@@ -43,7 +43,7 @@ const vesselInfoVoyage = props => {
                             <span>{props.voyage.lastMeasurement.eta}</span>
                         </li>
                         <li>
-                            Απόσταση από λιμάνι: <span>{props.voyage.lastMeasurement.toPort} miles</span>
+                            Απόσταση από λιμάνι: <span>{props.voyage.lastMeasurement.toPort} m</span>
                         </li>
                         <li>
                             Ημερομηνία: <span>{props.voyage.lastMeasurement.date}</span>
