@@ -13,6 +13,7 @@ import VesselInfoVoyage from '../../components/VesselInfoSummary/VesselIfoVoyage
 
 
 class VesselInfo extends Component {
+    _isMounted = false;
 
     state = {
         vessel: null,
@@ -20,6 +21,7 @@ class VesselInfo extends Component {
     }
 
     componentDidMount() {
+        this._isMounted = true;
         //  to top when the page loads
         this.topRequestHandler();
         this.setState({loading: true});
@@ -27,6 +29,10 @@ class VesselInfo extends Component {
             .then(response => {
                 this.setState({vessel: response.data, loading: false});
             });
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
     }
 
     topRequestHandler = () => {

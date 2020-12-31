@@ -6,15 +6,15 @@ const searchList = props => {
 
     return (
         <div className={classes.SearchList}>
-            <label htmlFor={props.typesId}>Τύπος Πλοίου: </label>
+            <label htmlFor={props.typesId}>{props.typesTitle}</label>
             <select name={props.typesName}
                     id={props.typesId}
                     onChange={
-                        (event) => props.changed(props.typesId, event.target.value)}>
+                        (event) => props.changed(props.typesId, encodeURIComponent(event.target.value))}>
                 {props.typesOptions.map((option, index) => (
-                    <option value={option === 'all' ? '' : option}
+                    <option value={option.code}
                             key={option + index}>
-                        {option === 'all' ? 'Επιλέξτε τύπο πλοίου' : option}
+                        {option.name === 'all' ? 'Επιλέξτε' : option.name}
                     </option>
                 ))}
             </select>

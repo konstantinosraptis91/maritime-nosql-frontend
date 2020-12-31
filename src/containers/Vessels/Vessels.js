@@ -14,6 +14,7 @@ import classes from './Vessels.module.css';
  */
 
 class Vessels extends Component {
+    _isMounted = false;
     //  Added infinite scrolling with lazy loading Stavros Lamprinos on 30/12/2020
     state = {
         shipTypeParam: '',
@@ -37,11 +38,11 @@ class Vessels extends Component {
         };
 
         axios.get(path, config).then(response => {
-            console.log(path);
+            // console.log(path);
             const data = page === 0 ?
                 [...response.data] :
                 [...this.state.vessels, ...response.data];
-            console.log(data.length);
+            // console.log(data.length);
             this.setState({
                 vessels: data,
                 loading: false
@@ -55,7 +56,7 @@ class Vessels extends Component {
         if (this.state.prevY > y) {
             // const lastVessel = this.state.vessels[this.state.vessels.length - 1];
             const currentPage = this.state.vessels.length;
-            const path = this.state.url ? this.state.url : 'vessels/shiptype/Fishing';
+            const path = this.state.url ? this.state.url : 'vessels';
             this.loadData(path, currentPage);
             this.setState({page: currentPage, toTop: true});
         }
@@ -63,8 +64,10 @@ class Vessels extends Component {
     }
 
     componentDidMount() {
+        this._isMounted = true;
+
         this.loadData(this.props.match.path, this.state.page);
-        // window.addEventListener('scroll', this.checkScrollTop);
+        window.addEventListener('scroll', this.checkScrollTop);
 
         let options = {
             root: null,
@@ -74,6 +77,10 @@ class Vessels extends Component {
 
         this.observer = new IntersectionObserver(this.observeHandler.bind(this), options);
         this.observer.observe(this.loadingRef);
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
     }
 
     //  vesselId is created upon mapping
@@ -88,7 +95,7 @@ class Vessels extends Component {
         let countryParam = this.state.countryParam;
         let url;
         //  to be stored in const and then make the get request
-        if (listId === 'shiptype') {
+        if (listId === 'type') {
             shipTypeParam = path;
             url = `${this.props.match.url}/${path}${countryParam !== '' ? '/' + countryParam : ''}`;
         } else {
@@ -110,15 +117,15 @@ class Vessels extends Component {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
-    // checkScrollTop = () => {
-    //     if (!this.state.toTop && window.pageYOffset > 400) {
-    //         this.setState({toTop: true});
-    //         console.log('state set: ' + this.state.toTop);
-    //     } else if (this.state.toTop && window.pageYOffset <= 400) {
-    //         this.setState({toTop: false});
-    //         console.log('state set: ' + this.state.toTop);
-    //     }
-    // }
+    checkScrollTop = () => {
+        if (!this.state.toTop && window.pageYOffset > 400) {
+            this.setState({toTop: true});
+            // console.log('state set: ' + this.state.toTop);
+        } else if (this.state.toTop && window.pageYOffset <= 400) {
+            this.setState({toTop: false});
+            // console.log('state set: ' + this.state.toTop);
+        }
+    }
 
     render() {
         const loadingCSS = {

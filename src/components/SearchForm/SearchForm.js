@@ -3,32 +3,50 @@ import axios from '../../axios-maritime';
 
 import SearchList from './SearchList/SearchList';
 import Spinner from '../UI/Spinner/Spinner';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 import classes from './SearchForm.module.css';
 
 class SearchForm extends Component {
+    _isMounted = false;
 
     state = {
         vesselTypes: null,
-        countries: ['France', 'United Kingdom of Great Britain and Northern Ireland'],
+        countries: null,
         loading: true,
 
     }
 
     componentDidMount() {
-        //  axios get for countries and vessel types to generate state arrays
+        this._isMounted = true;
+         // axios get for countries and vessel types to generate state arrays
         this.setState({loading: true});
-        axios.get(`/vessels/shiptypes`)
+        axios.get(`/vessels/types`)
             .then(response => {
-                const vesselTypes = ['all', ...response.data];
-                this.setState({vesselTypes: vesselTypes, loading: false});
+                let types = [{code: '', name: 'all'}];
+                response.data.map(vessel => (
+                    types.push({
+                        code: vessel,
+                        name: vessel
+                    })
+                ));
+                console.log(types);
+                axios.get(`/countries`)
+                    .then(response => {
+                        const countries = [{code: '', name: 'all'}, ...response.data];
+                        console.log(countries);
+                        this.setState({
+                            vesselTypes: types,
+                            countries: countries,
+                            loading: false
+                    });
+                });
             });
     }
 
-    // changeHandler = () => {
-    //     console.log('form log');
-    //
-    // }
+    componentWillUnmount() {
+        this._isMounted = false;
+    }
 
     render() {
         return (
@@ -37,7 +55,7 @@ class SearchForm extends Component {
                 {this.state.loading ?
                     <Spinner/> :
                     <SearchList typesName="vessel-types"
-                                typesId="shiptype"
+                                typesId="type"
                                 typesTitle="Τύπος Πλοίου: "
                                 typesOptions={this.state.vesselTypes}
                                 changed={this.props.changed}
@@ -57,4 +75,4 @@ class SearchForm extends Component {
     }
 }
 
-export default SearchForm;
+export default withErrorHandler(SearchForm, axios);

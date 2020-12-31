@@ -18,7 +18,7 @@ const vesselInfoVoyage = props => {
                 <p>Πλήθος Μετρήσεων: <span>{props.voyage.numberOfMeasurements}</span></p>
             </div>
             <div>
-                <p>
+                <div>
                     Στοιχεία πρώτης μέτρησης:
                     <ul>
                         <li><abbr title="Estimated Time of Arrival LT">
@@ -32,10 +32,10 @@ const vesselInfoVoyage = props => {
                             Ημερομηνία: <span>{props.voyage.firstMeasurement.date}</span>
                         </li>
                     </ul>
-                </p>
+                </div>
             </div>
             <div>
-                <p>
+                <div>
                     Στοιχεία Τελευταίας μέτρησης:
                     <ul>
                         <li><abbr title="Estimated Time of Arrival LT">
@@ -49,7 +49,7 @@ const vesselInfoVoyage = props => {
                             Ημερομηνία: <span>{props.voyage.lastMeasurement.date}</span>
                         </li>
                     </ul>
-                </p>
+                </div>
             </div>
 
         </div>
