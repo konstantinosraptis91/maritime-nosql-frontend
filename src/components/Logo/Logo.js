@@ -11,11 +11,10 @@ import classes from './Logo.module.css';
 
 const logo = props => {
     //  Including basic logic to make the Logo reusable  Stavros Lamprinos on 23/12/2020
-    let preferences = {}
+    let preferences = {link : '/'}
 
     switch (props.logoType) {
         case ('appLogo'):
-            preferences.link = '/';
             preferences.src = vesselLogo;
             preferences.alt = 'Vessel logo';
             break;

@@ -1,0 +1,21 @@
+.VesselInfo {
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+}
+
+.VesselInfo .Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+.VesselInfo .Stats p {
+    flex: 150px;
+    color: #5f5c5c;
+}
+
+.VesselInfo .Stats span {
+    font-weight: bold;
+}

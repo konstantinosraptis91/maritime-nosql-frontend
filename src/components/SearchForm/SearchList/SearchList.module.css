@@ -1,5 +1,22 @@
 .SearchList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-evenly;*/
+}
+
+.SearchList label {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.SearchList select {
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    outline: none;
+    font: inherit;
+    margin: auto;
 }

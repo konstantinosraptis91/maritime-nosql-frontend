@@ -2,11 +2,12 @@
     width: 75%;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
+    text-align: center;
     padding: .7rem;
     margin: .7rem auto;
     box-sizing: border-box;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 100px;
-    background-color: whitesmoke;
+    background-color: #eceff3;
 }

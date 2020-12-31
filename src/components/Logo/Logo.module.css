@@ -10,8 +10,7 @@
 
 @media (max-width: 499px) {
     .Logo {
-        background-color: #187aba;
+        background-color: transparent;
         text-align: center;
     }
-
 }

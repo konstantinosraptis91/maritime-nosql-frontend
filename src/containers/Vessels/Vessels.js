@@ -37,6 +37,7 @@ class Vessels extends Component {
         };
 
         axios.get(path, config).then(response => {
+            console.log(path);
             const data = page === 0 ?
                 [...response.data] :
                 [...this.state.vessels, ...response.data];
@@ -61,9 +62,7 @@ class Vessels extends Component {
     }
 
     componentDidMount() {
-        //  temp path
-        const path = `${this.props.match.path}/shiptype/Fishing`;
-        this.loadData(path, this.state.page);
+        this.loadData(this.props.match.path, this.state.page);
         window.addEventListener('scroll', this.checkScrollTop);
 
         let options = {
@@ -72,11 +71,8 @@ class Vessels extends Component {
             threshold: 1.0
         };
 
-        this.observer = new IntersectionObserver(
-            this.observeHandler.bind(this), options
-        );
+        this.observer = new IntersectionObserver(this.observeHandler.bind(this), options);
         this.observer.observe(this.loadingRef);
-        console.log(this.loadingRef);
     }
 
     //  vesselId is created upon mapping
@@ -86,7 +82,7 @@ class Vessels extends Component {
     }
 
     changeOptionHandler = (listId, optionValue) => {
-        const path = `${listId}/${optionValue}`;
+        const path = optionValue !== '' ? `${listId}/${optionValue}` : '';
         let shipTypeParam = this.state.shipTypeParam;
         let countryParam = this.state.countryParam;
         let url;
@@ -116,11 +112,10 @@ class Vessels extends Component {
     checkScrollTop = () => {
         if (!this.state.toTop && window.pageYOffset > 400) {
             this.setState({toTop: true});
-            console.log('gone true');
+            console.log('state set: ' + this.state.toTop);
         } else if (this.state.toTop && window.pageYOffset <= 400) {
             this.setState({toTop: false});
-            console.log('gone false');
-
+            console.log('state set: ' + this.state.toTop);
         }
     }
 
@@ -146,13 +141,14 @@ class Vessels extends Component {
 
         return (
             <div style={{padding: '1rem 0'}}>
-                    <FaArrowCircleUp className={classes.Top}
-                                    onClick={this.topRequestHandler}
-                                    style={{
-                                        height: 40,
-                                        display: this.state.toTop ?
-                                            'flex' :
-                                            'none'}}/>
+                <FaArrowCircleUp className={classes.Top}
+                                 onClick={this.topRequestHandler}
+                                 style={{
+                                     height: 40,
+                                     display: this.state.toTop ?
+                                         'flex' :
+                                         'none'
+                                 }}/>
                 <SearchForm changed={this.changeOptionHandler}/>
                 {vessels}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
