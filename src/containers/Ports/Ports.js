@@ -5,6 +5,8 @@ import axios from '../../axios-maritime';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 import Spinner from '../../components/UI/Spinner/Spinner';
+import Modal from '../../components/UI/Modal/Modal';
+import SearchInput from '../../components/SearchForm/SearchInput/SearchInput';
 import PortSearchForm from '../../components/SearchForm/PortSearchForm';
 import DataNotFound from '../../components/UI/DataNotFound/DataNotFound';
 import classes from '../Vessels/Vessels.module.css';
@@ -22,9 +24,13 @@ class Ports extends Component {
         loading: false,
         url: null,
         ports: [],
+        selectedCoordinates: [],
+        distance: 0,
         page: 0,
         prevY: 0,
-        toTop: false
+        toTop: false,
+        showDistance: false,
+        searchable: false
     }
 
     loadData = (path, page) => {
@@ -78,11 +84,12 @@ class Ports extends Component {
         this._isMounted = false;
     }
 
-    continueNearVesselsHandler = portCoordinates => {
-        const lon = portCoordinates[0];
-        const lat = portCoordinates[1];
+    continueNearVesselsHandler = () => {
+        const lon = this.state.selectedCoordinates[0];
+        const lat = this.state.selectedCoordinates[1];
+        const distInKm = this.state.distance * 1000;
         this.props.history
-            .push(`${this.props.match.url}/near-vessels/lon/${lon}/lat/${lat}`);
+            .push(`${this.props.match.url}/near-vessels/lon/${lon}/lat/${lat}/dist/${distInKm}`);
     }
 
     changeOptionHandler = (_, optionValue) => {
@@ -112,6 +119,21 @@ class Ports extends Component {
         }
     }
 
+    distanceHandler = coordinates => {
+        this.setState({
+            showDistance: true,
+            selectedCoordinates: coordinates
+        });
+    }
+
+    distanceCancelHandler = () => {
+        this.setState({showDistance: false});
+    }
+
+    distanceChangeHandler = dist => {
+        this.setState({distance: dist, searchable: dist > 0});
+    }
+
     render() {
         const loadingCSS = {
             height: '100px',
@@ -123,12 +145,18 @@ class Ports extends Component {
                   name={port.name}
                   country={port.country}
                   coordinates={port.geoPoint.coordinates}
-                  continueNearVessel=
-                      {() => this.continueNearVesselsHandler(port.geoPoint.coordinates)}/>
+                  distance={() => this.distanceHandler(port.geoPoint.coordinates)}/>
+            // {() => this.continueNearVesselsHandler(port.geoPoint.coordinates)}
         ))
 
         return (
             <div style={{padding: '1rem 0'}}>
+                <Modal show={this.state.showDistance}
+                       closeModal={this.distanceCancelHandler}>
+                    <SearchInput disabled={!this.state.searchable}
+                                 changed={this.distanceChangeHandler}
+                                 clicked={this.continueNearVesselsHandler}/>
+                </Modal>
                 <FaArrowCircleUp className={classes.Top}
                                  onClick={this.topRequestHandler}
                                  style={{

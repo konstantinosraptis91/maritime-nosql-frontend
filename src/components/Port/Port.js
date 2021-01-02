@@ -27,7 +27,7 @@ const port = props => {
             </div>
             <hr style={{width: '85%'}}/>
             <Button btnType="Info"
-                    clicked={props.continueNearVessel}>
+                    clicked={props.distance}>
                 Εμφάνιση Κοντινών Πλοίων
             </Button>
         </div>

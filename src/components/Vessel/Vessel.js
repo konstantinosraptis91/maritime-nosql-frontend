@@ -17,7 +17,6 @@ const vessel = props => {
                 <p>Τύπος: {props.shipType}</p>
                 <p><abbr title="Maritime Mobile Service Identity">MMSI</abbr>: {props.mmsi}</p>
                 <p>Σημαία: {props.country}</p>
-
             </div>
             <hr style={{width: '85%'}}/>
             <Button btnType="Info"
