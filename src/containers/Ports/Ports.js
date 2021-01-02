@@ -5,10 +5,15 @@ import axios from '../../axios-maritime';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 import Spinner from '../../components/UI/Spinner/Spinner';
+import PortSearchForm from '../../components/SearchForm/PortSearchForm';
 import DataNotFound from '../../components/UI/DataNotFound/DataNotFound';
 import classes from '../Vessels/Vessels.module.css';
 import Port from '../../components/Port/Port';
 
+
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 2/1/2021.
+ */
 
 class Ports extends Component {
 
@@ -80,7 +85,7 @@ class Ports extends Component {
             .push(`${this.props.match.url}/near-vessels/lon/${lon}/lat/${lat}`);
     }
 
-    changeOptionHandler = (optionValue) => {
+    changeOptionHandler = (_, optionValue) => {
         const path = optionValue !== '' ? `country/${optionValue}` : '';
         const url = `${this.props.match.url}/${path}`;
 
@@ -113,8 +118,9 @@ class Ports extends Component {
             margin: '30px'
         };
 
-        const ports = this.state.ports.map(port => (
-            <Port name={port.name}
+        const ports = this.state.ports.map((port, index) => (
+            <Port key={port + index}
+                  name={port.name}
                   country={port.country}
                   coordinates={port.geoPoint.coordinates}
                   continueNearVessel=
@@ -131,7 +137,7 @@ class Ports extends Component {
                                          'flex' :
                                          'none'
                                  }}/>
-                {/*<SearchForm changed={this.changeOptionHandler}/>*/}
+                <PortSearchForm changed={this.changeOptionHandler}/>
                 {ports.length !== 0 ? ports : <DataNotFound/>}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
                      style={loadingCSS}>
