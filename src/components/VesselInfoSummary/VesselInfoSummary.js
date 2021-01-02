@@ -38,7 +38,7 @@ const vesselInfoSummary = props => (
             <p>Σημαία: <span>{props.vessel.country}</span></p>
         </div>
         <hr style={{width: '90%'}}/>
-        <Button btnType="Info"
+        <Button btnType="Success"
                 clicked={props.trajectoryContinue}>
             Εμφάνιση Τροχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
         </Button>

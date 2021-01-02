@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Port/Port.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Port/Port.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/DataNotFound/DataNotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Ports/Ports.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselInfoSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -79,7 +84,7 @@
       <workItem from="1609136184701" duration="10670000" />
       <workItem from="1609231826143" duration="220000" />
       <workItem from="1609232075161" duration="14693000" />
-      <workItem from="1609309677158" duration="46253000" />
+      <workItem from="1609309677158" duration="51120000" />
     </task>
     <servers />
   </component>

@@ -1,29 +1,22 @@
 import React, {Component} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
+
 import axios from '../../axios-maritime';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 import Spinner from '../../components/UI/Spinner/Spinner';
 import DataNotFound from '../../components/UI/DataNotFound/DataNotFound';
-import Vessel from '../../components/Vessel/Vessel';
-import SearchForm from '../../components/SearchForm/SearchForm';
+import classes from '../Vessels/Vessels.module.css';
+import Port from '../../components/Port/Port';
 
-import classes from './Vessels.module.css';
 
-/**
- * @author Stavros Lamprinos [stalab at linuxmail.org] on 28/12/2020.
- */
+class Ports extends Component {
 
-class Vessels extends Component {
     _isMounted = false;
-    //  Added infinite scrolling with lazy loading Stavros Lamprinos on 30/12/2020
     state = {
-        shipTypeParam: '',
-        countryParam: '',
-        url: null,
-        path: '',
-        vessels: [],
         loading: false,
+        url: null,
+        ports: [],
         page: 0,
         prevY: 0,
         toTop: false
@@ -39,25 +32,21 @@ class Vessels extends Component {
         };
 
         axios.get(path, config).then(response => {
-            // console.log(path);
             const data = page === 0 ?
                 [...response.data] :
-                [...this.state.vessels, ...response.data];
-            // console.log(data.length);
+                [...this.state.ports, ...response.data];
             this.setState({
-                vessels: data,
+                ports: data,
                 loading: false
             });
         });
     }
 
-    //  observer of loading page event
     observeHandler = entities => {
         const y = entities[0].boundingClientRect.y;
         if (this.state.prevY > y) {
-            // const lastVessel = this.state.vessels[this.state.vessels.length - 1];
-            const currentPage = this.state.vessels.length;
-            const path = this.state.url ? this.state.url : 'vessels';
+            const currentPage = this.state.ports.length;
+            const path = this.state.url ? this.state.url : 'ports';
             this.loadData(path, currentPage);
             this.setState({page: currentPage, toTop: true});
         }
@@ -84,28 +73,18 @@ class Vessels extends Component {
         this._isMounted = false;
     }
 
-    //  vesselId is created upon mapping
-    continueVesselInfoHandler = vesselId => {
+    continueNearVesselsHandler = portCoordinates => {
+        const lon = portCoordinates[0];
+        const lat = portCoordinates[1];
         this.props.history
-            .push(`${this.props.match.url}/vessel-info/${vesselId}`);
+            .push(`${this.props.match.url}/near-vessels/lon/${lon}/lat/${lat}`);
     }
 
-    changeOptionHandler = (listId, optionValue) => {
-        const path = optionValue !== '' ? `${listId}/${optionValue}` : '';
-        let shipTypeParam = this.state.shipTypeParam;
-        let countryParam = this.state.countryParam;
-        let url;
-        //  to be stored in const and then make the get request
-        if (listId === 'type') {
-            shipTypeParam = path;
-            url = `${this.props.match.url}/${path}${countryParam !== '' ? '/' + countryParam : ''}`;
-        } else {
-            countryParam = path;
-            url = `${this.props.match.url}/${shipTypeParam !== '' ? shipTypeParam + '/' : ''}${countryParam}`;
-        }
+    changeOptionHandler = (optionValue) => {
+        const path = optionValue !== '' ? `country/${optionValue}` : '';
+        const url = `${this.props.match.url}/${path}`;
+
         this.setState({
-            shipTypeParam: shipTypeParam,
-            countryParam: countryParam,
             url: url,
             page: 0
         });
@@ -134,19 +113,13 @@ class Vessels extends Component {
             margin: '30px'
         };
 
-        const vessels = //this.state.loading ?
-            //<Spinner /> :
-            this.state.vessels.map(response => {
-                return (
-                    <Vessel key={response.mmsi}
-                            name={response.vesselName}
-                            mmsi={response.mmsi}
-                            shipType={response.shipType}
-                            country={response.country}
-                            continueVesselInfo={() => this
-                                .continueVesselInfoHandler(response.mmsi)}/>
-                );
-            });
+        const ports = this.state.ports.map(port => (
+            <Port name={port.name}
+                  country={port.country}
+                  coordinates={port.geoPoint.coordinates}
+                  continueNearVessel=
+                      {() => this.continueNearVesselsHandler(port.geoPoint.coordinates)}/>
+        ))
 
         return (
             <div style={{padding: '1rem 0'}}>
@@ -158,8 +131,8 @@ class Vessels extends Component {
                                          'flex' :
                                          'none'
                                  }}/>
-                <SearchForm changed={this.changeOptionHandler}/>
-                {vessels.length !== 0 ? vessels : <DataNotFound/>}
+                {/*<SearchForm changed={this.changeOptionHandler}/>*/}
+                {ports.length !== 0 ? ports : <DataNotFound/>}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
                      style={loadingCSS}>
                     {this.state.loading ? <Spinner/> : null}
@@ -169,4 +142,4 @@ class Vessels extends Component {
     }
 }
 
-export default withErrorHandler(Vessels, axios);
+export default withErrorHandler(Ports, axios);
