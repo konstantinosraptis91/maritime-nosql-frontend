@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/VesselInfo/VesselInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +79,7 @@
       <workItem from="1609136184701" duration="10670000" />
       <workItem from="1609231826143" duration="220000" />
       <workItem from="1609232075161" duration="14693000" />
-      <workItem from="1609309677158" duration="44733000" />
+      <workItem from="1609309677158" duration="46253000" />
     </task>
     <servers />
   </component>

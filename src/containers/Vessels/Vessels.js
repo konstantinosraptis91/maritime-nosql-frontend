@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
+import {FaExclamationTriangle} from 'react-icons/fa';
 import axios from '../../axios-maritime';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
@@ -158,7 +159,16 @@ class Vessels extends Component {
                                          'none'
                                  }}/>
                 <SearchForm changed={this.changeOptionHandler}/>
-                {vessels}
+                {vessels.length !== 0 ? vessels : <h4 style={{
+                    textAlign: 'center',
+                    fontSize: '2rem',
+                    color: '#5f5c5c'
+                }}>
+                    <FaExclamationTriangle/>
+                    <span style={{paddingLeft: '1.1rem'}}>
+                        Δεν βρέθηκαν δεδομένα. Αλλάξτε τα φίλτρα αναζήτησης
+                    </span>
+                </h4>}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
                      style={loadingCSS}>
                     {this.state.loading ? <Spinner/> : null}
