@@ -89,7 +89,7 @@ class Ports extends Component {
         const lat = this.state.selectedCoordinates[1];
         const distInKm = this.state.distance * 1000;
         this.props.history
-            .push(`/vessels/near/lon/${lon}/lat/${lat}/dist/${distInKm}`);
+            .push(`ports/vessels/near/lon/${lon}/lat/${lat}/dist/${distInKm}`);
     }
 
     changeOptionHandler = (_, optionValue) => {

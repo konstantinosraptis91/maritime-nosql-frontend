@@ -19,8 +19,8 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={HomeBuilder}/>
                     <Route path="/vessels/vessel-info/:id" component={VesselInfo}/>
-                    <Route path="/vessels/near/lon/:lon/lat/:lat/dist/:dist" component={NearVessels}/>
                     <Route path="/vessels" component={Vessels}/>
+                    <Route path="/ports/vessels/near/lon/:lon/lat/:lat/dist/:dist" component={NearVessels}/>
                     <Route path="/ports" component={Ports}/>
                 </Switch>
             </Layout>

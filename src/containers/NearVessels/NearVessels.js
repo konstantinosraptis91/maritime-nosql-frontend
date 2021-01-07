@@ -42,6 +42,7 @@ class NearVessels extends Component {
                 vessels: data,
                 loading: false
             });
+            console.log('length: ' + this.state.vessels.length);
         });
     }
 
@@ -50,7 +51,8 @@ class NearVessels extends Component {
         const y = entities[0].boundingClientRect.y;
         if (this.state.prevY > y) {
             const currentPage = this.state.vessels.length;
-            this.loadData(this.state.url, currentPage);
+            this.loadData(this.props.match.url.substring(6), currentPage);
+            console.log('this state URL: ' + this.state.url);
             this.setState({page: currentPage, toTop: true});
         }
         this.setState({prevY: y});
@@ -58,7 +60,7 @@ class NearVessels extends Component {
 
     componentDidMount() {
         this._isMounted = true;
-        this.loadData(this.props.match.url, this.state.page);
+        this.loadData(this.props.match.url.substring(6), this.state.page);
         window.addEventListener('scroll', this.checkScrollTop);
 
         let options = {
