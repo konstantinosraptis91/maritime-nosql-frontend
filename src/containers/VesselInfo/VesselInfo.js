@@ -6,6 +6,7 @@ import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import VesselInfoSummary from '../../components/VesselInfoSummary/VesselInfoSummary';
 import VesselInfoVoyage from '../../components/VesselInfoSummary/VesselIfoVoyage/VesselInfoVoyage';
+import VesselInfoCockpit from '../../components/VesselInfoSummary/VesselInfoCockpit/VesselInfoCockpit';
 
 /**
  * @author Stavros Lamprinos [stalab at linuxmail.org] on 28/12/2020.
@@ -17,7 +18,8 @@ class VesselInfo extends Component {
 
     state = {
         vessel: null,
-        loading: false
+        loading: false,
+        staticContent: true
     }
 
     componentDidMount() {
@@ -43,27 +45,49 @@ class VesselInfo extends Component {
         alert(`Page with trajectory info on map for ship with mmsi: ${mmsi} coming soon!!!`);
     }
 
+    staticShowHandler = () => {
+        this.setState({staticContent: true});
+    }
+
+    dynamicShowHandler = () => {
+        this.setState({staticContent: false});
+    }
+
 
     render() {
-        const vessel = this.state.vessel ?
+        const style = {
+            textAlign: 'center',
+            lineHeight: '2rem'
+        };
+
+        return this.state.vessel ?
             <Auxiliary>
                 <VesselInfoSummary vessel={this.state.vessel}
-                                   trajectoryContinue={() => this.trajectoryContinueHandler(this.state.vessel.mmsi)}/>
-                {this.state.vessel.voyages.map((voyage, index) => (
-                    <VesselInfoVoyage key={index}
-                                      voyage={voyage}/>
-                ))}
+                                   trajectoryContinue={() => this.trajectoryContinueHandler(this.state.vessel.mmsi)}
+                                   staticType={this.state.staticContent}/>
+                <VesselInfoCockpit showStatic={this.staticShowHandler}
+                                   showDynamic={this.dynamicShowHandler}
+                                   activeBtn={this.state.staticContent}/>
+                {this.state.staticContent ?
+                    <div style={style}>
+                        <h3>Αναλύονται τα ταξίδια του πλοίου σύμφωνα με τα στατικά δεδομένα που στάλθηκαν στο AIS</h3>
+                        {this.state.vessel.voyages.map((voyage, index) => (
+                            <VesselInfoVoyage key={index}
+                                              voyage={voyage}/>
+                        ))}
+                    </div>
+                    :
+                    <div style={style}>
+                        <h3>Λίστα με τα σημεία του πλοίου σύμφωνα με τα δυναμικά δεδομένα που στάλθηκαν στον AIS</h3>
+                        <p style={{color: '#5f5c5c'}}>
+                            Για κάθε πλοίο παραγματοποιήθηκε κανονικοποίηση σε 50 διαφορετικά στοιχεία
+                            που περιλαμβάνουν μέσους όρους όλων των κοντινών τους σημείων
+                        </p>
+                    </div>
+                }
             </Auxiliary>
-             :
+            :
             <Spinner/>;
-
-
-        return (
-            <Auxiliary>
-                {vessel}
-            </Auxiliary>
-
-        );
     }
 }
 

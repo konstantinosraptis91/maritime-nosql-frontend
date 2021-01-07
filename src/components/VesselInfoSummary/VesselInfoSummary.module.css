@@ -19,3 +19,7 @@
 .VesselInfo .Stats span {
     font-weight: bold;
 }
+
+.VesselInfo button {
+    margin: 1rem 2rem;
+}

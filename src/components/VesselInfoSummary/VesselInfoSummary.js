@@ -1,4 +1,6 @@
 import React from 'react';
+import {FaMapMarkedAlt} from 'react-icons/all';
+import {FaShip} from 'react-icons/all';
 
 import Button from '../UI/Button/Button';
 import classes from './VesselInfoSummary.module.css';
@@ -16,7 +18,10 @@ const vesselInfoSummary = props => (
                 bottom: '72%',
                 fontSize: '.8rem',
                 color: '#187aba'
-            }}>Πηγή: AIS Nari Static</p>
+            }}>
+                Πηγή: AIS Nari {props.staticType ?  'Static' : 'Dynamic'}
+
+            </p>
             <h3 style={{textAlign: 'center'}}><span>{props.vessel.vesselName}</span></h3>
         </div>
         <hr style={{width: '90%'}}/>
@@ -37,11 +42,17 @@ const vesselInfoSummary = props => (
                 <p>Βύθισμα: <span>{props.vessel.draught}</span></p> : null}
             <p>Σημαία: <span>{props.vessel.country}</span></p>
         </div>
-        <hr style={{width: '90%'}}/>
-        <Button btnType="Success"
+        <Button btnType="Submit"
                 clicked={props.trajectoryContinue}>
-            Εμφάνιση Τροχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
+            <FaMapMarkedAlt style={{paddingRight: '.7rem'}}/>
+             Εμφάνιση Τροχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
         </Button>
+        <Button btnType="Submit"
+                clicked={props.trajectoryContinue}>
+            <FaShip style={{paddingRight: '.7rem'}}/>
+             Εμφάνιση Κοντικών Λιμανιών
+        </Button>
+        <hr style={{width: '90%'}}/>
     </div>
 );
 
