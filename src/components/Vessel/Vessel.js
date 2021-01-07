@@ -19,10 +19,11 @@ const vessel = props => {
                 <p>Σημαία: {props.country}</p>
             </div>
             <hr style={{width: '85%'}}/>
-            <Button btnType="Info"
-                    clicked={props.continueVesselInfo}>
+            {props.show ?
+                <Button btnType="Info"
+                                  clicked={props.continueVesselInfo}>
                 Αναλυτικά Στοιχεία
-            </Button>
+                </Button> : null}
         </div>
     )
 }

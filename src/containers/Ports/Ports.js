@@ -89,7 +89,7 @@ class Ports extends Component {
         const lat = this.state.selectedCoordinates[1];
         const distInKm = this.state.distance * 1000;
         this.props.history
-            .push(`${this.props.match.url}/near-vessels/lon/${lon}/lat/${lat}/dist/${distInKm}`);
+            .push(`/vessels/near/lon/${lon}/lat/${lat}/dist/${distInKm}`);
     }
 
     changeOptionHandler = (_, optionValue) => {
@@ -146,7 +146,6 @@ class Ports extends Component {
                   country={port.country}
                   coordinates={port.geoPoint.coordinates}
                   distance={() => this.distanceHandler(port.geoPoint.coordinates)}/>
-            // {() => this.continueNearVesselsHandler(port.geoPoint.coordinates)}
         ))
 
         return (
