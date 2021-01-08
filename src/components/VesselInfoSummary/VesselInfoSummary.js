@@ -48,7 +48,7 @@ const vesselInfoSummary = props => (
              Εμφάνιση Τροχιών του <strong>{props.vessel.vesselName}</strong> στον χάρτη
         </Button>
         <Button btnType="Submit"
-                clicked={props.trajectoryContinue}>
+                clicked={props.nearPortsContinue}>
             <FaShip style={{paddingRight: '.7rem'}}/>
              Εμφάνιση Κοντικών Λιμανιών
         </Button>

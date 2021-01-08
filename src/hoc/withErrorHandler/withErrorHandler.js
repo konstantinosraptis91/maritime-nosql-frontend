@@ -31,7 +31,7 @@ const withErrorHandler = (WrappedComponent, axios) => {
                 });
             //  ejecting the interceptors after the components unmount
             return () => {
-                // console.log(`Component is about to unmount. Interceptors killed: ${reqInterceptor} and ${resInterceptor}`);
+                console.log(`Component is about to unmount. Interceptors killed: ${reqInterceptor} and ${resInterceptor}`);
                 axios.interceptors.request.eject(reqInterceptor);
                 axios.interceptors.request.eject(resInterceptor);
             };

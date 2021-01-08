@@ -1,0 +1,48 @@
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 8/1/2021.
+ */
+
+.VesselTrajectory {
+    width: 75%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: .7rem;
+    margin: .7rem auto;
+    box-sizing: border-box;
+}
+
+.VesselTrajectory p {
+    width: 250px;
+    text-align: center;
+}
+
+.VesselTrajectory .Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.VesselTrajectory .Stats .Coords {
+    border-top: 1px solid #187aba;
+}
+
+.VesselTrajectory .Stats .Coords p:nth-child(1) {
+    font-size: 1.2rem;
+    color: #40A4C8;
+    font-weight: 100;
+}
+
+.VesselTrajectory span {
+    display: block;
+}
+
+@media (min-width: 500px) {
+    .VesselTrajectory .Stats .Coords {
+        border: none;
+    }
+
+    .VesselTrajectory span {
+        display: inline;
+    }
+}
