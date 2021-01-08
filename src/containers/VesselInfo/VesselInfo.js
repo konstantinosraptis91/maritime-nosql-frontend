@@ -56,7 +56,8 @@ class VesselInfo extends Component {
     }
 
     trajectoryContinueHandler = mmsi => {
-        alert(`Page with trajectory info on map for ship with mmsi: ${mmsi} coming soon!!!`);
+        this.props.history
+            .push(`/vessels/trajectory/keplergl/mmsi/${mmsi}`);
     }
 
     staticShowHandler = () => {
@@ -92,7 +93,7 @@ class VesselInfo extends Component {
             lineHeight: '2rem'
         };
 
-        const search =
+        const distInput =
             <Modal show={this.state.showDistance}
                    closeModal={this.distanceCancelHandler}>
                 <SearchInput disabled={!this.state.searchable}
@@ -100,9 +101,9 @@ class VesselInfo extends Component {
                              clicked={this.continueNearPortsHandler}/>
             </Modal>;
 
-        return (this.state.vessel ?
+        return this.state.vessel ?
             <Auxiliary>
-                {search}
+                {distInput}
                 <VesselInfoSummary vessel={this.state.vessel}
                                    trajectoryContinue={() => this.trajectoryContinueHandler(this.state.vessel.mmsi)}
                                    staticType={this.state.staticContent}
@@ -135,7 +136,7 @@ class VesselInfo extends Component {
                 }
             </Auxiliary>
             :
-            <Spinner/>);
+            <Spinner/>;
     }
 }
 

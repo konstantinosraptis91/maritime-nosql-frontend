@@ -8,6 +8,7 @@ import VesselInfo from './containers/VesselInfo/VesselInfo';
 import Ports from './containers/Ports/Ports';
 import NearVessels from './containers/NearVessels/NearVessels';
 import NearPorts from './containers/NearPorts/NearPorts';
+import Keplergl from './containers/Keplergl/Keplergl';
 
 /**
  * @author Stavros Lamprinos [stalab at linuxmail.org] on 22/12/2020.
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/" exact component={HomeBuilder}/>
                     <Route path="/vessels/vessel-info/:id" component={VesselInfo}/>
                     <Route path="/vessels/ports/near/dist/:dist" component={NearPorts}/>
+                    <Route path="/vessels/trajectory/keplergl/mmsi/:mmsi" component={Keplergl}/>
                     <Route path="/vessels" component={Vessels}/>
                     <Route path="/ports/vessels/near/lon/:lon/lat/:lat/dist/:dist" component={NearVessels}/>
                     <Route path="/ports" component={Ports}/>

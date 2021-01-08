@@ -44,5 +44,6 @@
 
     .VesselTrajectory span {
         display: inline;
+        padding-left: 1.6rem;
     }
 }
