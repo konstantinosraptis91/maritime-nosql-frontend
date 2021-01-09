@@ -52,7 +52,6 @@ class NearVessels extends Component {
         if (this.state.prevY > y) {
             const currentPage = this.state.vessels.length;
             this.loadData(this.props.match.url.substring(6), currentPage);
-            console.log('this state URL: ' + this.state.url);
             this.setState({page: currentPage, toTop: true});
         }
         this.setState({prevY: y});
@@ -95,6 +94,10 @@ class NearVessels extends Component {
             margin: '30px'
         };
 
+        const style = {
+            textAlign: 'center'
+        }
+
         const vessels = this.state.loading ?
             <Spinner /> :
             this.state.vessels.map(response => {
@@ -117,6 +120,8 @@ class NearVessels extends Component {
                                          'flex' :
                                          'none'
                                  }}/>
+                <h2 style={style}>Λίστα πλοίων</h2>
+                <p style={style}>Παρουσιάζονται όλα τα πλοία που βρέθηκαν κοντά στο λιμάνι σε αύξουσα σειρά απόστασης</p>
                 {vessels.length !== 0 ? vessels : <DataNotFound/>}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
                      style={loadingCSS}>
