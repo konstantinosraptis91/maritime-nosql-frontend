@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/statics/infoContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/java-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mongodb.png.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/statics/infoContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/infoContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/UI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -58,10 +61,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\components\UI" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\hoc" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +90,7 @@
       <workItem from="1609231826143" duration="220000" />
       <workItem from="1609232075161" duration="14693000" />
       <workItem from="1609309677158" duration="60360000" />
-      <workItem from="1610012248748" duration="50858000" />
+      <workItem from="1610012248748" duration="58348000" />
     </task>
     <servers />
   </component>

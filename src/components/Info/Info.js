@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as Context from '../../assets/statics/infoContent';
+import infoContext from '../../assets/statics/infoContent';
 import Card from '../UI/Card/Card';
 
 import classes from './Info.module.css';
@@ -19,10 +19,10 @@ const info = props => {
                     Περιγραφή Maritime
                 </h2>
                 <article>
-                    Η εφαρμογή Maritime περιέχει στοιχειά από το σύνολο δεδομένων
-                    <a href="https://zenodo.org/record/1167595#.X80GU2gzabg" target="_blank" rel="noreferrer">
-                        «Heterogeneous Integrated Dataset for Maritime Intelligence, Surveillance, and Reconnaissance».
-                    </a> Μέσα από τις λειτουργίες της εφαρμογής παρουσιάζεται στον χρήστη πληθώρα πληροφοριών για πλοία
+                    Η εφαρμογή Maritime περιέχει στοιχειά από το σύνολο
+                    δεδομένων <a href="https://zenodo.org/record/1167595#.X80GU2gzabg" target="_blank" rel="noreferrer">
+                    «Heterogeneous Integrated Dataset for Maritime Intelligence, Surveillance, and Reconnaissance»
+                </a>. Μέσα από τις λειτουργίες της εφαρμογής παρουσιάζεται στον χρήστη πληθώρα πληροφοριών για πλοία
                     που
                     κινήθηκαν στις θαλάσσιες περιοχές της βόρειας Ευρώπης την περίοδο 01/10/2015 έως 31/03/2016, όπως
                     διάφορα στοιχεία περιγραφής των πλοίων, κινήσεις, γεωστατικά δεδομένα της περιοχής κίνησής τους,
@@ -43,12 +43,14 @@ const info = props => {
                 </article>
                 <h2>Εργαλεία Ανάπτυξης</h2>
                 <div className={classes.Cards}>
-                    <Card title={Context.reactContent.title}
-                          description={Context.reactContent.desc}/>
-                    <Card title={Context.javaContent.title}
-                          description={Context.javaContent.desc}/>
-                    <Card title={Context.mongoDBContent.title}
-                          description={Context.mongoDBContent.desc}/>
+                    {infoContext.map(card => (
+                        <Card title={card.title}
+                              description={card.desc}
+                              image={card.image}
+                              alt={card.alt}
+                              url={card.url}
+                              key={card.title}/>
+                    ))}
                 </div>
             </section>
             <section className={classes.Participants}>

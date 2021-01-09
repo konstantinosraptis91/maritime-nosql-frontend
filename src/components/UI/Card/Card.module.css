@@ -1,4 +1,62 @@
-.Title {
-    color: #fff;
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 10/1/2021.
+ */
+
+.Link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.Container {
+    max-width: 300px;
+    width: 100%;
+    margin: auto 1rem 1.5rem 1rem;
+    color: black;
+    background-color: #fff;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(184,196,194,0.25);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    /*font-size: 1.1rem;*/
+}
+
+.Container:hover {
+    transform: translate3d(0, -5px, 0);
+}
+
+.Container img {
+    width: 250px;
+    height: 250px;
+    object-fit: scale-down;
+}
+
+.Container .Title {
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: #42494f;
+}
+
+.Container .Description {
     font-weight: 300;
+    text-align: left;
+    height: fit-content;
+    color: #1a1a1a;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 500px) {
+    .Container.Title {
+        font-size: 1rem;
+    }
+
+    .Container.Description {
+        font-size: .75rem;
+    }
 }

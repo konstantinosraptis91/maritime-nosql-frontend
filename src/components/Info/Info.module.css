@@ -1,3 +1,7 @@
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 10/1/2021.
+ */
+
 .Info {
     display: flex;
     flex-wrap: wrap;
@@ -25,9 +29,21 @@
 
 }
 
+.Info article a {
+    color: #187aba;
+    text-decoration: none;
+}
+
+.Info article a:hover,
+.Info article a:visited {
+    color: #187aba;
+    border-bottom: 1px solid #187aba;
+}
+
 .Info .Cards {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 12px;
 }
 
 .Info .Description {
@@ -50,6 +66,7 @@
 .Info .Participants h2 {
     text-decoration: none;
     color: white;
+    padding: 1rem;
 }
 
 .Info .Participants ul {
