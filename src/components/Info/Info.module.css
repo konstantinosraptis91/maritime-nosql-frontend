@@ -1,4 +1,74 @@
 .Info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #5f5c5c;
+}
 
+.Info h2 {
+    font-weight: 300;
+    color: #222222;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+    text-decoration: underline solid #187aba;
+    width: auto;
+}
 
+.Info article {
+    padding: 2rem 4rem;
+    line-height: 1.6;
+    text-align: left;
+
+}
+
+.Info .Cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Info .Description {
+    width: 75%;
+    box-sizing: border-box;
+    /*background-color: red;*/
+    flex: 499px;
+}
+
+.Info .Participants {
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #40A4C8;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Info .Participants h2 {
+    text-decoration: none;
+    color: white;
+}
+
+.Info .Participants ul {
+    list-style-type: none;
+    margin: 2.3rem 0;
+    padding: 0;
+}
+
+.Info .Participants ul li {
+    padding: .6rem 0;
+}
+
+.Info .Participants a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 500px) {
+    .Info .Participants {
+        width: 100%;
+    }
 }
