@@ -15,6 +15,8 @@ import classes from '../Vessels/Vessels.module.css';
 
 class NearPorts extends Component {
     _isMounted = false;
+    path = `/ports/near/vessel/mmsi/${this.props.match.params.mmsi}/dist/${this.props.match.params.dist}`;
+
     state = {
         path: '',
         ports: [],
@@ -25,6 +27,7 @@ class NearPorts extends Component {
     }
 
     loadData = (path, page) => {
+        console.log(path);
         this.setState({loading: true});
         let config = {
             headers: {
@@ -33,16 +36,16 @@ class NearPorts extends Component {
             }
         };
 
-        // axios.get(path, config).then(response => {
-        //     const data = page === 0 ?
-        //         [...response.data] :
-        //         [...this.state.ports, ...response.data];
-        //     this.setState({
-        //         vessels: data,
-        //         loading: false
-        //     });
-        //     console.log('length: ' + this.state.ports.length);
-        // });
+        axios.get(path, config).then(response => {
+            const data = page === 0 ?
+                [...response.data] :
+                [...this.state.ports, ...response.data];
+            this.setState({
+                ports: data,
+                loading: false
+            });
+            // console.log('length: ' + this.state.ports.length);
+        });
     }
 
     //  observer of loading page event
@@ -50,7 +53,7 @@ class NearPorts extends Component {
         const y = entities[0].boundingClientRect.y;
         if (this.state.prevY > y) {
             const currentPage = this.state.ports.length;
-            this.loadData(this.props.match.url.substring(6), currentPage);
+            this.loadData(this.path, currentPage);
             this.setState({page: currentPage, toTop: true});
         }
         this.setState({prevY: y});
@@ -58,7 +61,8 @@ class NearPorts extends Component {
 
     componentDidMount() {
         this._isMounted = true;
-        this.loadData(this.props.match.url.substring(6), this.state.page);
+        console.log(this.path);
+        this.loadData(this.path, this.state.page);
         window.addEventListener('scroll', this.checkScrollTop);
 
         let options = {
@@ -94,14 +98,20 @@ class NearPorts extends Component {
         };
 
         const style = {
-            textAlign: 'center'
+            textAlign: 'center',
+            fontSize: '1.8rem',
+            width: '80%',
+            margin: '.5rem auto'
         };
 
-        const vessels = this.state.loading ?
+        const ports = this.state.loading ?
             <Spinner /> :
-            this.state.vessels.map((port, index) => {
+            this.state.ports.map((port, index) => {
                 return (
-                    <Port key={port + index}/>
+                    <Port key={port + index}
+                            name={port.name}
+                            country={port.country}
+                            coordinates={port.geoPoint.coordinates}/>
                 );
             });
 
@@ -115,10 +125,11 @@ class NearPorts extends Component {
                                          'flex' :
                                          'none'
                                  }}/>
-                <h2 style={style}>Λίστα πλοίων</h2>
-                <p style={style}>Παρουσιάζονται όλα τα πλοία που βρέθηκαν κοντά στο λιμάνι
+                <h2 style={style}>Λίστα Λιμανιών</h2>
+                <p style={style}>Παρουσιάζονται όλα τα λιμάνια από τα οποία πέρασε κοντά το πλοίο
+                    στη διάρκεια όλων των ταξιδιών του
                     σε αύξουσα σειρά απόστασης</p>
-                {vessels.length !== 0 ? vessels : <DataNotFound/>}
+                {ports.length !== 0 ? ports : <DataNotFound/>}
                 <div ref={loadingRef => (this.loadingRef = loadingRef)}
                      style={loadingCSS}>
                     {this.state.loading ? <Spinner/> : null}

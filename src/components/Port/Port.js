@@ -26,10 +26,11 @@ const port = props => {
                 </div>
             </div>
             <hr style={{width: '85%'}}/>
-            <Button btnType="Info"
-                    clicked={props.distance}>
-                Εμφάνιση Κοντινών Πλοίων
-            </Button>
+            {props.show ?
+                <Button btnType="Info"
+                        clicked={props.distance}>
+                    Εμφάνιση Κοντινών Πλοίων
+                </Button> : null}
         </div>
     )
 };

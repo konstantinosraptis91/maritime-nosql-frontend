@@ -83,15 +83,20 @@ class VesselInfo extends Component {
     continueNearPortsHandler = () => {
         const distInKm = this.state.distance * 1000;
         this.props.history
-            .push(`/vessels/ports/near/dist/${distInKm}`);
+            .push(`/vessels/ports/near/mmsi/${this.state.vessel.mmsi}/dist/${distInKm}`);
     }
 
 
     render() {
         const style = {
             textAlign: 'center',
-            lineHeight: '2rem'
+            lineHeight: '2rem',
         };
+
+        const cockpitStyle = {
+            width: '80%',
+            margin: '1rem auto'
+        }
 
         const distInput =
             <Modal show={this.state.showDistance}
@@ -113,7 +118,7 @@ class VesselInfo extends Component {
                                    activeBtn={this.state.staticContent}/>
                 {this.state.staticContent ?
                     <div style={style}>
-                        <h3>Αναλύονται τα ταξίδια του πλοίου σύμφωνα με τα στατικά δεδομένα που στάλθηκαν στο AIS</h3>
+                        <h3 style={cockpitStyle}>Αναλύονται τα ταξίδια του πλοίου σύμφωνα με τα στατικά δεδομένα που στάλθηκαν στο AIS</h3>
                         {this.state.vessel.voyages.map((voyage, index) => (
                             <VesselInfoVoyage key={index}
                                               voyage={voyage}/>
@@ -121,8 +126,8 @@ class VesselInfo extends Component {
                     </div>
                     :
                     <div style={style}>
-                        <h3>Λίστα με τα σημεία του πλοίου σύμφωνα με τα δυναμικά δεδομένα που στάλθηκαν στον AIS</h3>
-                        <p style={{color: '#5f5c5c'}}>
+                        <h3 style={cockpitStyle}>Λίστα με τα σημεία του πλοίου σύμφωνα με τα δυναμικά δεδομένα που στάλθηκαν στον AIS</h3>
+                        <p style={{color: '#5f5c5c', width: '80%', margin: '.2rem auto'}}>
                             Για κάθε πλοίο παραγματοποιήθηκε κανονικοποίηση σε 50 διαφορετικά στοιχεία
                             που περιλαμβάνουν μέσους όρους όλων των κοντινών τους σημείων
                         </p>

@@ -42,7 +42,7 @@ class NearVessels extends Component {
                 vessels: data,
                 loading: false
             });
-            console.log('length: ' + this.state.vessels.length);
+            // console.log('length: ' + this.state.vessels.length);
         });
     }
 
@@ -95,7 +95,10 @@ class NearVessels extends Component {
         };
 
         const style = {
-            textAlign: 'center'
+            textAlign: 'center',
+            fontSize: '1.8rem',
+            width: '80%',
+            margin: '.5rem auto'
         }
 
         const vessels = this.state.loading ?

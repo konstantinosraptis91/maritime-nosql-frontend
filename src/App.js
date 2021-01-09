@@ -22,7 +22,7 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={HomeBuilder}/>
                     <Route path="/vessels/vessel-info/:id" component={VesselInfo}/>
-                    <Route path="/vessels/ports/near/dist/:dist" component={NearPorts}/>
+                    <Route path="/vessels/ports/near/mmsi/:mmsi/dist/:dist" component={NearPorts}/>
                     <Route path="/vessels/trajectory/keplergl/mmsi/:mmsi" component={Keplergl}/>
                     <Route path="/vessels" component={Vessels}/>
                     <Route path="/ports/vessels/near/lon/:lon/lat/:lat/dist/:dist" component={NearVessels}/>

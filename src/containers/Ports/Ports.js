@@ -145,7 +145,8 @@ class Ports extends Component {
                   name={port.name}
                   country={port.country}
                   coordinates={port.geoPoint.coordinates}
-                  distance={() => this.distanceHandler(port.geoPoint.coordinates)}/>
+                  distance={() => this.distanceHandler(port.geoPoint.coordinates)}
+                  show/>
         ))
 
         return (
