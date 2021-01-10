@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/java-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/mongodb.png.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects-PPS-2020-21.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/statics/infoContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/infoContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Footer/FooterContent/FooterContent.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Keplergl/Keplergl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Keplergl/Keplergl.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +71,7 @@
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
@@ -90,7 +94,7 @@
       <workItem from="1609231826143" duration="220000" />
       <workItem from="1609232075161" duration="14693000" />
       <workItem from="1609309677158" duration="60360000" />
-      <workItem from="1610012248748" duration="58348000" />
+      <workItem from="1610012248748" duration="65651000" />
     </task>
     <servers />
   </component>

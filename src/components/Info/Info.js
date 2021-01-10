@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {FaFilePdf} from 'react-icons/all';
 
 import infoContext from '../../assets/statics/infoContent';
 import Card from '../UI/Card/Card';
@@ -28,7 +30,7 @@ const info = props => {
                     διάφορα στοιχεία περιγραφής των πλοίων, κινήσεις, γεωστατικά δεδομένα της περιοχής κίνησής τους,
                     καθώς και αποστάσεις τους από λιμάνια από τα οποία πέρασαν κατά τη διάρκεια των ταξιδιών τους.
                 </article>
-                <h2>Σκοπός ανάπτυξης</h2>
+                <h2>Σκοπός Ανάπτυξης</h2>
                 <article>
                     Η εφαρμογή αναπτύχθηκε στο πλαίσιο εκπόνησης εργασίας τους μαθήματος "(ΠΠΣ-183) - Διαχείριση
                     Δεδομένων
@@ -54,6 +56,9 @@ const info = props => {
                 </div>
             </section>
             <section className={classes.Participants}>
+                <Link to="/projects-PPS-2020-21.pdf" target="_blank" rel="noreferrer">
+                    <FaFilePdf style={{paddingRight: '.6rem'}}/> Οδηγός Χρήσης Εφαρμογής
+                </Link>
                 <div>
                     <h2>Ονοματεπώνυμα Φοιτητών</h2>
                     <ul>

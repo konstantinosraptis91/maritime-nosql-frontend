@@ -9,6 +9,7 @@ const searchList = props => {
             <label htmlFor={props.typesId}>{props.typesTitle}</label>
             <select name={props.typesName}
                     id={props.typesId}
+                    className={classes.ChosenSelect}
                     onChange={
                         (event) => props.changed(props.typesId, encodeURIComponent(event.target.value))}>
                 {props.typesOptions.map((option, index) => (
