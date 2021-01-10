@@ -56,7 +56,7 @@ const info = props => {
                 </div>
             </section>
             <section className={classes.Participants}>
-                <Link to="/projects-PPS-2020-21.pdf" target="_blank" rel="noreferrer">
+                <Link to="/Maritime-User-Manual.pdf" target="_blank" rel="noreferrer">
                     <FaFilePdf style={{paddingRight: '.6rem'}}/> Οδηγός Χρήσης Εφαρμογής
                 </Link>
                 <div>
