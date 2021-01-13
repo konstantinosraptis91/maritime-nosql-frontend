@@ -41,7 +41,7 @@ class SearchForm extends Component {
     render() {
         return (
             <div className={classes.SearchForm}>
-                <h4>Φίλτρα Αναζήτησης</h4>
+                {/*<h4>Φίλτρα Αναζήτησης</h4>*/}
                 {this.state.loading ?
                     <Spinner/> :
                     <SearchList typesName="country"

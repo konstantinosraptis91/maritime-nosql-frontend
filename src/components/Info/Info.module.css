@@ -43,6 +43,7 @@
 .Info .Cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 50px 12px;
 }
 
@@ -87,5 +88,19 @@
 @media (max-width: 500px) {
     .Info .Participants {
         width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Info,
+    .info h2,
+    .Info .Participants,
+    .info .Cards,
+    .Info .Description {
+        font-size: 1.1rem;
+    }
+
+    .Info .Participants a:first-child {
+        margin-top: 2rem;
     }
 }

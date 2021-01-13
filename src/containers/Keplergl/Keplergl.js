@@ -86,7 +86,7 @@ const keplergl = props => {
 
         return (
             <KeplerGl id="trajectories"
-                      mapboxApiAccessToken="pk.eyJ1Ijoic3RhbGFiIiwiYSI6ImNram80em4xazFlM2IyeXMyc2JwZWZhZDYifQ.9jd6rNZpsFlZq6Mb7uxLGQ"
+                      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API}
                       width={window.innerWidth}
                       height={window.innerHeight}/>
         );
