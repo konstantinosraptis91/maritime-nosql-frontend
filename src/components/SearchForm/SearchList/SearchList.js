@@ -15,7 +15,9 @@ const searchList = props => {
                 {props.typesOptions.map((option, index) => (
                     <option value={option.code}
                             key={option + index}>
-                        {option.name === 'all' ? 'Επιλέξτε' : option.name}
+                        {option.name ?
+                            option.name === 'all' ? 'Επιλέξτε Τύπο Πλοίου' : option.name :
+                            option.value === 'all' ? 'Επιλέξτε Χώρα': option.value}
                     </option>
                 ))}
             </select>

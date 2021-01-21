@@ -26,7 +26,8 @@ class SearchForm extends Component {
         this.setState({loading: true});
         axios.get(`/countries`)
             .then(response => {
-                const countries = [{code: '', name: 'all'}, ...response.data];
+                //  changed response type from name to value Stavros Lamprinos 21/1/21
+                const countries = [{code: '', value: 'all'}, ...response.data];
                 this.setState({
                     countries: countries,
                     loading: false

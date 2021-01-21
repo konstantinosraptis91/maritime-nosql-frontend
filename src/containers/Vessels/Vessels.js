@@ -96,9 +96,10 @@ class Vessels extends Component {
         let countryParam = this.state.countryParam;
         let url;
         //  to be stored in const and then make the get request
+        //  bug fixed when shipType is null after a country is selected Stavros Laprinos 21/1/21
         if (listId === 'type') {
             shipTypeParam = path;
-            url = `${this.props.match.url}/${path}${countryParam !== '' ? '/' + countryParam : ''}`;
+            url = `${this.props.match.url}${path ? '/' + path : ''}${countryParam !== '' ? '/' + countryParam : ''}`;
         } else {
             countryParam = path;
             url = `${this.props.match.url}/${shipTypeParam !== '' ? shipTypeParam + '/' : ''}${countryParam}`;

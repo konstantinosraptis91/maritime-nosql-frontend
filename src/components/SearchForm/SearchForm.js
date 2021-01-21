@@ -32,7 +32,7 @@ class SearchForm extends Component {
                 ));
                 axios.get(`/countries`)
                     .then(response => {
-                        const countries = [{code: '', name: 'all'}, ...response.data];
+                        const countries = [{code: '', value: 'all'}, ...response.data];
                         this.setState({
                             vesselTypes: types,
                             countries: countries,

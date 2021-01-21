@@ -20,7 +20,7 @@ const vesselTrajectory = props => {
             <hr style={{width: '85%'}}/>
             <div className={classes.Stats}>
                 <p>Πλήθος Σημείων Κανονικοποίησης: {numberOfPoints}</p>
-                <p>Μέση Ταχύτητα: {avgSpeed}</p>
+                <p>Μέση Ταχύτητα: {Number(avgSpeed).toFixed(2)}</p>
                 <div className={classes.Coords}>
                     <p>Γεωγραφικές Συντεταγμένες</p>
                     <p>Μήκος: {avgGeoPoint.coordinates[0]}</p>
