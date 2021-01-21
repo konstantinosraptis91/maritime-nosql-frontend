@@ -16,7 +16,7 @@ const toolbar = props => (
         </div>
         <div className={classes.AppTitle}>mλritimξ</div>
         <nav className={classes.DesktopOnly}>
-            <NavigationItems/>
+            <NavigationItems navType="main"/>
         </nav>
     </header>
 );

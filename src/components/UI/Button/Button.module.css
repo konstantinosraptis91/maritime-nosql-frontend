@@ -14,10 +14,10 @@
     font-weight: bold;
 }
 
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-}
+/*.Button:first-of-type {*/
+/*    margin-left: 0;*/
+/*    padding-left: 0;*/
+/*}*/
 
 .Success {
     color: #5C9210;
@@ -29,7 +29,23 @@
     border-color: #944317;
 }
 
+.Submit {
+    color: #187aba;
+    border-color: #187aba;
+}
+
+.Info {
+    color: #187aba;
+    border: none;
+}
+
 .Link {
     color: #ccc;
     border: none;
+}
+
+@media (max-width: 500px) {
+    .Button {
+        width: 90%;
+    }
 }

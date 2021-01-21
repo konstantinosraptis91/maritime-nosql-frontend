@@ -5,7 +5,10 @@ import axios from 'axios';
  */
 
 const instance = axios.create({
-    baseURL: 'localhost:8000/'
+    baseURL: 'http://localhost:9000',
+    headers: {
+        'limit': 40,
+    }
 });
 
 export default instance;

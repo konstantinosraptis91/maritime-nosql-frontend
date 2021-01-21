@@ -1,7 +1,28 @@
-.Vessel {
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 28/12/2020.
+ */
 
+.Vessel {
+    width: 75%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: .7rem;
+    margin: .7rem auto;
+    box-sizing: border-box;
 }
 
 .Vessel .Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.Stats p {
+    width: 250px;
+    text-align: center;
+}
+
+.Vessel button {
+    display: block;
+    margin: 5px auto;
 }

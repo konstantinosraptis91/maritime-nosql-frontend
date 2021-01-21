@@ -43,17 +43,19 @@ class Layout extends Component {
 
         return (
             <Auxiliary>
-                <Modal show={this.state.showPrivacy}
-                       closeModal={this.privacyCancelHandler}>
-                    <PrivacyPolicy />
-                </Modal>
-                <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
-                <SideDrawer
-                    open={this.state.showSideDrawer}
-                    closed={this.sideDrawerClosedHandler}/>
-                <main className={classes.Content}>
-                    {this.props.children}
-                </main>
+                <div style={{minHeight: 'calc(65vh - 10px)'}}>
+                    <Modal show={this.state.showPrivacy}
+                           closeModal={this.privacyCancelHandler}>
+                        <PrivacyPolicy/>
+                    </Modal>
+                    <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
+                    <SideDrawer
+                        open={this.state.showSideDrawer}
+                        closed={this.sideDrawerClosedHandler}/>
+                    <main className={classes.Content}>
+                        {this.props.children}
+                    </main>
+                </div>
                 <Footer showPrivacy={this.privacyHandler}/>
             </Auxiliary>
         );

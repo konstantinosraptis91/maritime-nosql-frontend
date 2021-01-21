@@ -12,6 +12,14 @@
     height: 100%;
 }
 
+.SubNavItems {
+    border-top: 2px solid #187aba;
+    border-bottom: 2px solid #187aba;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 500px) {
     .NavigationItems {
         flex-flow: row;

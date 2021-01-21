@@ -7,9 +7,8 @@ const style = {
 
 const privacyPolicy = () => (
     <ol style={style}>
-        {privacy.map(ctx => (
-
-            <li>
+        {privacy.map((ctx, index) => (
+            <li key={index}>
                 <h4>{ctx.header}</h4>
                 <p>{ctx.content}</p>
             </li>

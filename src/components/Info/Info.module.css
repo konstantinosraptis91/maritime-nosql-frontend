@@ -1,0 +1,106 @@
+/**
+ * @author Stavros Lamprinos [stalab at linuxmail.org] on 10/1/2021.
+ */
+
+.Info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #5f5c5c;
+}
+
+.Info h2 {
+    font-weight: 300;
+    color: #222222;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+    text-decoration: underline solid #187aba;
+    width: auto;
+}
+
+.Info article {
+    padding: 2rem 4rem;
+    line-height: 1.6;
+    text-align: left;
+
+}
+
+.Info article a {
+    color: #187aba;
+    text-decoration: none;
+}
+
+.Info article a:hover,
+.Info article a:visited {
+    color: #187aba;
+    border-bottom: 1px solid #187aba;
+}
+
+.Info .Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 12px;
+}
+
+.Info .Description {
+    width: 75%;
+    box-sizing: border-box;
+    /*background-color: red;*/
+    flex: 499px;
+}
+
+.Info .Participants {
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #40A4C8;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Info .Participants h2 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.Info .Participants ul {
+    list-style-type: none;
+    margin: 2.3rem 0;
+    padding: 0;
+}
+
+.Info .Participants ul li {
+    padding: .6rem 0;
+}
+
+.Info .Participants a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 500px) {
+    .Info .Participants {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Info,
+    .info h2,
+    .Info .Participants,
+    .info .Cards,
+    .Info .Description {
+        font-size: 1.1rem;
+    }
+
+    .Info .Participants a:first-child {
+        margin-top: 2rem;
+    }
+}

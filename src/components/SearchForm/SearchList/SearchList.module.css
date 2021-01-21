@@ -1,0 +1,29 @@
+.SearchList {
+    margin: 0 auto 25px;
+    position: relative;
+}
+
+.SearchList label {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.SearchList .ChosenSelect {
+    display: block;
+    width: 80%;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    outline: none;
+    color: #60666d;
+    margin: auto;
+    box-shadow: 0 7px 20px -7px;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.SearchList select option {
+    cursor: pointer;
+}

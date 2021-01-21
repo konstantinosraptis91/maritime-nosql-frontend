@@ -1,0 +1,72 @@
+.SearchInput {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.SearchInput input {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+.ContinueButton {
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #187aba;;
+    color: #187aba;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #187aba;;
+}
+
+.ContinueButton:hover, .ContinueButton:active {
+    background-color: #187aba;
+    border: 1px solid whitesmoke;
+    color: white;
+}
+
+.ContinueButton:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}
+
+.ContinueButton:hover:disabled {
+    background-color: #809eac;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.ContinueButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+.Label {
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+}
+
+@media (max-width: 500px) {
+    .SearchInput input {
+        width: 80%
+    }
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6d1c4ee-0331-47a3-bb4c-f46b8271e09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vessel/Vessel.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/statics/homeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/statics/homeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeBlock/HomeBlock.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/PortSearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/PortSearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchList/SearchList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VesselTrajectory/VesselTrajectory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VesselTrajectory/VesselTrajectory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Vessels/Vessels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,7 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lwOGm5egwJ7vBPAtYnMd9A9Z57" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -53,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/UI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,14 +55,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\components\UI" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\hoc" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src" />
       <recent name="X:\WebstormProjects\maritime-nosql-front-end\src\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -87,7 +86,13 @@
       <workItem from="1608512146022" duration="152000" />
       <workItem from="1608555783206" duration="40000" />
       <workItem from="1608715837019" duration="18904000" />
-      <workItem from="1609136184701" duration="3699000" />
+      <workItem from="1609136184701" duration="10670000" />
+      <workItem from="1609231826143" duration="220000" />
+      <workItem from="1609232075161" duration="14693000" />
+      <workItem from="1609309677158" duration="60360000" />
+      <workItem from="1610012248748" duration="81690000" />
+      <workItem from="1610642661288" duration="9303000" />
+      <workItem from="1611226626599" duration="2078000" />
     </task>
     <servers />
   </component>
@@ -105,7 +110,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="development" />
                       </list>
                     </value>
                   </entry>
