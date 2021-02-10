@@ -8,9 +8,9 @@ const apiURL = '/msc/ais/maritime/api';
 
 const instance = axios.create({
     //  using localhost for internal development
-    // baseURL: `http://localhost:9000${apiURL}`,
+    baseURL: `http://localhost:9000${apiURL}`,
     //  using msc-ais for production
-    baseURL: `https://maritime.msc-ais.site${apiURL}`,
+    // baseURL: `https://maritime.msc-ais.site${apiURL}`,
     headers: {
         'limit': 40,
     }
