@@ -1,6 +1,6 @@
 import reactLogo from '../images/logo512.png';
 import javaLogo from '../images/java-logo.png';
-import mongoLogo from '../images/mongodb.png.webp';
+import mongoLogo from '../images/mongo.png';
 
 /**
  * @author Stavros Lamprinos [stalab at linuxmail.org] on 10/1/2021.
@@ -17,7 +17,7 @@ const infoContext = [
     },
     {
         image: javaLogo,
-        alt: 'image of React',
+        alt: 'image of Java',
         url: 'https://adoptopenjdk.net',
         title: 'Java',
         desc: 'Για την ανάπτυξη του backend της εφαρμογής maritime χρησιμοποιήθηκε η γλώσσα προγραμματισμού Java, το Javalin framework και το ' +
@@ -26,7 +26,7 @@ const infoContext = [
     },
     {
         image: mongoLogo,
-        alt: 'image of React',
+        alt: 'image of mongoDB',
         url: 'https://www.mongodb.com/3',
         title: 'MongoDB',
         desc: 'Για την αποθήκευση των δεδομένων που ανακτήθηκαν χρησιμοποιήθηκε το Σύστημα Αποθήκευσης μη Σχεσιακής Βάσης ' +

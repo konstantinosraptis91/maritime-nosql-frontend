@@ -12,7 +12,7 @@ import classes from './Info.module.css';
  */
 
 
-const info = props => {
+const info = () => {
 
     return (
         <div className={classes.Info}>
@@ -57,7 +57,7 @@ const info = props => {
             </section>
             <section className={classes.Participants}>
                 <Link to="/Maritime-User-Manual.pdf" target="_blank" rel="noreferrer">
-                    <FaFilePdf style={{paddingRight: '.6rem'}}/> Οδηγός Χρήσης Εφαρμογής
+                    <FaFilePdf style={{ paddingRight: '.6rem' }}/> Οδηγός Χρήσης Εφαρμογής
                 </Link>
                 <div>
                     <h2>Ονοματεπώνυμα Φοιτητών</h2>

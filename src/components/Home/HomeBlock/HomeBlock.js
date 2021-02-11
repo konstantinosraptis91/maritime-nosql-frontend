@@ -13,7 +13,7 @@ const homeBlock = props => {
     //  updated home blocks to navigate accordingly
     return (
         <section className={classes.HomeBlock} style={reverseOrder}>
-            <img src={props.imgPath} alt={props.imgDesc}/>
+            <img src={props.imgPath} alt={props.imgDesc} style={{ maxHeight: 500 }}/>
 
                 <div className={classes.Block}>
                     <Link to={props.path}>

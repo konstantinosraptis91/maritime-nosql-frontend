@@ -43,14 +43,13 @@
 .Info .Cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 12px;
+    justify-content: center;
+    padding: 40px 8px;
 }
 
 .Info .Description {
     width: 75%;
     box-sizing: border-box;
-    /*background-color: red;*/
     flex: 499px;
 }
 
