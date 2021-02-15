@@ -17,7 +17,7 @@ const footerContent = props => {
             <div style={container}>
                 Ακολουθήστε μας:
                 <a
-                    href="https://github.com/users/konstantinosraptis91/projects/1"
+                    href="https://github.com/MSc-AIS"
                     target="_blank"
                     rel="noreferrer">
                     <FaGithub className={classes.Icon}/>
